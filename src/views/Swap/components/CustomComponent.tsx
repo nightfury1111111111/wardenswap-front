@@ -1,0 +1,68 @@
+/* eslint-disable react/react-in-jsx-scope */
+import styled from "styled-components";
+
+export const ColorProvider = styled((props: any) => (
+    <div {...props} />
+  ))`
+      --color-primary: ${(props) => props.mode === "light" ? '#202251': '#fff'};
+      --color-primary-hover: ${(props) => props.mode === "light" ? '#343884': '#eaeaea'};
+      --color-danger: ${(props) => props.mode === "light" ? '#ff382c': '#ff382c'};
+      --color-warning: ${(props) => props.mode === "light" ? '#c7c70f': '#dede0e'};
+      --color-light-blue: ${(props) => props.mode === "light" ? '#82affb': '#82affb'};
+      --color-light-blue-2: ${(props) => props.mode === "light" ? '#82affb': '#fff'};
+      --color-light-blue-hover: ${(props) => props.mode === "light" ? '#4a6fb0': '#4a6fb0'};
+      --color-main-background: ${(props) => props.mode === "light" ? 'radial-gradient(62.29% 62.29% at 50% 50%,rgba(142,202,230,0.5) 0%,hsla(0,0%,100%,0) 100%),#fff' : ''};
+      --color-background: ${(props) => props.mode === "light" ? '#fff': '#2d2f60'};
+      --color-background-2: ${(props) => props.mode === "light" ? '#fff': '#202251'};
+      --color-background-3: ${(props) => props.mode === "light" ? '#fff': '#3c3e77'};
+      --color-background-4: ${(props) => props.mode === "light" ? '#e9e9e9': '#484868'};
+      --color-background-5: ${(props) => props.mode === "light" ? '#eeeeee': '#3c3e77'};
+      --color-background-6: ${(props) => props.mode === "light" ? '#fff': '#202251'};
+      --color-background-7: ${(props) => props.mode === "light" ? '#e9ecef': '#202251'};
+      --color-background-8: ${(props) => props.mode === "light" ? '#e3e8ff': '#3c3e77'};
+      --color-background-9: ${(props) => props.mode === "light" ? '#82affb': '#fff'};
+      --color-background-10: ${(props) => props.mode === "light" ? '#f3f3f3': '#202251'};
+      --color-background-11: ${(props) => props.mode === "light" ? '#e0e0e0': '#2d2f60'};
+      --color-background-12: ${(props) => props.mode === "light" ? '#fff': '#fff'};
+      --color-text: ${(props) => props.mode === "light" ? '#000': '#fff'};
+      --color-text-2: ${(props) => props.mode === "light" ? '#202251': '#fff'};
+      --color-text-3: ${(props) => props.mode === "light" ? '#b2b2b2': '#fff'};
+      --color-text-4: ${(props) => props.mode === "light" ? '#767676': '#fff'};
+      --color-text-5: ${(props) => props.mode === "light" ? '#838386': '#fff'};
+      --color-text-6: ${(props) => props.mode === "light" ? '#202351': '#fff'};
+      --color-text-7: ${(props) => props.mode === "light" ? '#7a7a7a': '#fff'};
+      --color-text-green: ${(props) => props.mode === "light" ? '#28c975': '#28c975'};
+      --color-text-primary: ${(props) => props.mode === "light" ? 'rgba(32,34,81,var(--text-opacity))': '#fff'};
+      --color-text-btn: ${(props) => props.mode === "light" ? '#9e9e9e': '#e9e9e9'};
+      --color-text-btn-2: ${(props) => props.mode === "light" ? '#bdbdbd': '#a0a0a0'};
+      --color-text-btn-3: ${(props) => props.mode === "light" ? '#9e9e9e': '#2d2f60'};
+      --color-text-btn-hover: ${(props) => props.mode === "light" ? '#fff': '#2d2f60'};
+      --color-text-btn-hover-2: ${(props) => props.mode === "light" ? '#e9e9e9': '#48486b'};
+      --color-text-btn-hover-3: ${(props) => props.mode === "light" ? '#e7ebee': '#3c3e77'};
+      --color-text-btn-wrong-network: ${(props) => props.mode === "light" ? '#fff': '#fff'};
+      --color-text-gray-1: ${(props) => props.mode === "light" ? '#969696': '#fff'};
+      --color-text-gray-2: ${(props) => props.mode === "light" ? '#7d7d7d': '#fff'};
+      --color-text-gray-3: ${(props) => props.mode === "light" ? '#8f8f8f': '#fff'};
+      --color-text-gray-4: ${(props) => props.mode === "light" ? '#828282': '#fff'};
+      --color-text-gray-5: ${(props) => props.mode === "light" ? '#605f5f': '#fff'};
+      --color-text-gray-6: ${(props) => props.mode === "light" ? '#4f4f4f': '#fff'};
+      --color-text-gray-7: ${(props) => props.mode === "light" ? '#9d9d9d': '#fff'};
+      --color-text-gray-8: ${(props) => props.mode === "light" ? '#656565': '#fff'};
+      --color-text-invert: ${(props) => props.mode === "light" ? '#fff': '#d9d9d9'};
+      --color-text-navbar-inactive: ${(props) => props.mode === "light" ? '#838386': '#fff'};
+      --color-text-navbar-disabled: ${(props) => props.mode === "light" ? '#838386': '#b6b6bb'};
+      --color-modal-text-title: ${(props) => props.mode === "light" ? '#495057': '#fff'};
+      --color-modal-dismiss: ${(props) => props.mode === "light" ? '#6c757d': '#fff'};
+      --color-modal-dismiss-hover: ${(props) => props.mode === "light" ? '#6c757d': '#2d2f60'};
+      --color-border: ${(props) => props.mode === "light" ? '#eaeaea': '#202251'};
+      --color-border-2: ${(props) => props.mode === "light" ? '#eaeaea': '#3c3e77'};
+      --color-border-3: ${(props) => props.mode === "light" ? '#202251': '#202251 '};
+      --color-border-4: ${(props) => props.mode === "light" ? '#202251': '#3c3e77'};
+      --color-border-5: ${(props) => props.mode === "light" ? '#e0e0e0': '#3c3e77'};
+      --color-border-6: ${(props) => props.mode === "light" ? '#495057': '#fff'};
+      --color-border-7: ${(props) => props.mode === "light" ? '#dbdbdb': '#3c3e77'};
+      --color-border-8: ${(props) => props.mode === "light" ? '#eaeaea': '#4d5092'};
+      --color-hover: ${(props) => props.mode === "light" ? 'rgba(39,39,49,0.15)': 'rgba(32,34,81,0.5)'};
+      --color-switch: ${(props) => props.mode === "light" ? '#202251': '#82affb'};
+      --color-switch-2: ${(props) => props.mode === "light" ? '#d8d8d8': '#48486b'};
+    `;
